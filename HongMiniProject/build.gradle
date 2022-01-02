@@ -21,13 +21,23 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.1'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.0'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
 	annotationProcessor 'org.projectlombok:lombok'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // https://mvnrepository.com/artifact/javax.servlet/jstl
+    implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
+    // https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper
+    implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.56'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation 'com.google.code.gson:gson:2.8.8'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail
+    implementation 'org.springframework.boot:spring-boot-starter-mail:2.6.1'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
+    implementation 'org.springframework.boot:spring-boot-starter-validation:2.6.1'
 }
 
 test {
