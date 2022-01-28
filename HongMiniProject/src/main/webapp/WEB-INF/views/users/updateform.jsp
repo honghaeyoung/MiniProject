@@ -17,6 +17,7 @@ $(function(){
 </script>
 </head>
 <body>
+<center>
 <h3>${user.id}님의 정보를 수정합니다.</h3>
 <form action="update" method="post" id="updateform">
 	<table>
@@ -30,5 +31,6 @@ $(function(){
 		<tr><td colspan="2"><input type="submit" value="변경"></td></tr>
 		</table>
 		</form>
+		</center>
 </body>
 </html>
